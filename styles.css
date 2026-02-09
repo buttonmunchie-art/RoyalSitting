@@ -1,79 +1,89 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.6;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-box {
+  display: flex;
+  justify-content: center;
 }
 
 /* Header */
 header {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #333;
-    color: white;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #333;
+  color: white;
 }
 
 /* Sections */
 section {
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 h2 {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Image Showcase */
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+  display: grid;
+  width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .image-box {
-    height: 150px;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+  height: 500px;
 }
 
 /* Contact Section */
 .contact form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact input,
 .contact textarea {
-    padding: 10px;
-    border: 1px solid #999;
+  padding: 10px;
+  border: 1px solid #999;
 }
 
 .contact textarea {
-    height: 100px;
+  height: 100px;
 }
 
 .contact button {
-    padding: 10px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-size: 14px;
 }
